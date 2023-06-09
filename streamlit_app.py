@@ -24,8 +24,8 @@ def main():
     st.title("Breast Cancer Tumor Malignancy Prediction")
     st.write("Enter the tumor features to predict malignancy.")
 
-    values_input = st.text_area("Paste values here (separated by tab or comma or space")
-    if st.button("Predict"):
+    values_input = st.text_area("Paste values here (separated by tabs or commas or spaces)")
+    if st.button("Predict the Tumor"):
         values_list = values_input.strip().split("\t")
         if len(values_list) != 30:
             # Split using spaces if tab-separated splitting failed
